@@ -70,13 +70,17 @@ class _MyAppState extends State<MyApp> {
 
     try {
       final titles = await _titleGeneratorPlugin.generateTitles(_textController.text);
-      setState(() {
-        _generatedTitles = titles;
-      });
+      if (mounted) {
+        setState(() {
+          _generatedTitles = titles;
+        });
+      }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error generating titles: $e')),
-      );
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error generating titles: $e')),
+        );
+      }
     } finally {
       setState(() {
         _isGenerating = false;

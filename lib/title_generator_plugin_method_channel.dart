@@ -24,10 +24,10 @@ class MethodChannelTitleGeneratorPlugin extends TitleGeneratorPluginPlatform {
       );
       return result.cast<String>();
     } on PlatformException catch (e) {
-      print('Platform error generating titles: ${e.message}');
+      debugPrint('Platform error generating titles: ${e.message}');
       return ['Error generating titles: ${e.message}'];
     } catch (e) {
-      print('Unexpected error: $e');
+      debugPrint('Unexpected error: $e');
       return ['Unexpected error occurred: $e'];
     }
   }

@@ -1,10 +1,10 @@
 name: title_generator
 description: "Generate smart titles from text using platform-specific Natural Language Processing capabilities. Supports iOS and Android with native NLP integration."
 version: 0.0.1
-homepage: https://github.com/your-username/title_generator_plugin
-repository: https://github.com/your-username/title_generator_plugin
-issue_tracker: https://github.com/your-username/title_generator_plugin/issues
-documentation: https://github.com/your-username/title_generator_plugin#readme
+homepage: https://github.com/rikun5989/title_generator
+repository: https://github.com/rikun5989/title_generator
+issue_tracker: https://github.com/rikun5989/title_generator/issues
+documentation: https://github.com/rikun5989/title_generator#readme
 
 environment:
   sdk: ^3.7.2
