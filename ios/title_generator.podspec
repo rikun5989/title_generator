@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'title_generator'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Generate smart titles from text using platform-specific Natural Language Processing capabilities.'
   s.description      = <<-DESC
 Generate smart titles from text using platform-specific Natural Language Processing capabilities. 
